@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitchhiking App</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Hitchhiking App</h1>
+            <ul>
+                <li><a th:href="@{/users/register}">Register</a></li>
+                <li><a th:href="@{/login}">Login</a></li>
+                <!-- Removed Profile and Edit Profile links -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to the Hitchhiking App!</h2>
+        <p>Connect with drivers and fellow trekkers for an exciting adventure.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hitchhiking App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

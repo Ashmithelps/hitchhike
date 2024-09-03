@@ -1,0 +1,17 @@
+<!-- src/main/resources/templates/ride-details.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Details</title>
+</head>
+<body>
+    <h1>Ride Details</h1>
+    <p>Start Point: <span th:text="${ride.startPoint}"></span></p>
+    <p>Destination: <span th:text="${ride.destination}"></span></p>
+    <p>Departure Time: <span th:text="${ride.departureTime}"></span></p>
+    <p>Driver: <span th:text="${ride.driver.username}"></span></p>
+    <a th:href="@{/rides/search}">Search More Rides</a>
+</body>
+</html>

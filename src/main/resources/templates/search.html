@@ -1,0 +1,15 @@
+<!-- src/main/resources/templates/search.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search Rides</title>
+</head>
+<body>
+    <h2>Search for a Ride</h2>
+    <form action="/api/rides/search" method="get">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination"><br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

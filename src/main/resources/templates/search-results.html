@@ -1,0 +1,19 @@
+<!-- src/main/resources/templates/search-results.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <ul>
+        <li th:each="ride : ${rides}">
+            <span th:text="${ride.startPoint}"></span> to <span th:text="${ride.destination}"></span> 
+            at <span th:text="${ride.departureTime}"></span> by <span th:text="${ride.driver.username}"></span>
+        </li>
+    </ul>
+    <a th:href="@{/rides/search}">Search Again</a>
+</body>
+</html>
